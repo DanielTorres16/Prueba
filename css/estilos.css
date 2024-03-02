@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Color de fondo del cuerpo */
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.jpg'); /* Fondo de la página */
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el cuerpo */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilos para el carrusel */
+.carrusel {
+    background-color: #fff; /* Color de fondo del carrusel */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que las imágenes se desborden */
+    margin-top: 20px; /* Espacio superior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+}
+
+/* Estilos para el contenedor de las imágenes */
+.imagenes {
+    display: flex;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px; /* Espacio interno */
+    transition: transform 0.8s ease;
+}
+
+.imagenes img {
+    width: 200px; /* Ancho fijo para cada imagen */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los puntos indicadores */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute; /* Agregamos posición absoluta para los puntos */
+    bottom: 10px; /* Ajustamos la posición vertical */
+    width: 100%; /* Ancho completo */
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc; /* Color de los puntos */
+    border-radius: 50%;
+    display: inline-block;
